@@ -4,7 +4,7 @@
 //
 
 // Colors
-$blue: #4183C4; 
+$blue: #4183C4;
 
 // Grays
 $black: #000;
@@ -15,9 +15,12 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// $helvetica: 'Signika', Helvetica, Arial, sans-serif;
+// $helveticaNeue: 'Signika', "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $georgia: 'Merriweather', Georgia, serif;
+$helvetica: 'Amatic SC', cursive;
+$helveticaNeue: 'Amatic SC', cursive;
+$georgia: 'Quickwater', sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
