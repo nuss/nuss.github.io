@@ -260,6 +260,12 @@ nav {
   border-bottom: none;
 }
 
+@media screen and(min-width: 641px) {
+  .posts {
+    margin: auto 15px;
+  }
+}
+
 .post {
   blockquote {
     margin: 1.8em .8em;
