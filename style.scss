@@ -9,8 +9,8 @@
 @import "_variables";
 
 /* fonts import */
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Quicksand:400,700&subset=latin-ext,latin);
-/**/
+@import url(http://fonts.googleapis.com/css?family=Special+Elite|Quicksand:400,700&subset=latin-ext,latin);
+/****************/
 
 // Syntax highlighting @import is at the bottom of this file
 
@@ -212,7 +212,7 @@ img {
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: 18px;
 
   @include mobile {
     margin: 3px 0;
@@ -221,7 +221,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 80px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -229,7 +229,7 @@ nav {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   a {
@@ -237,7 +237,7 @@ nav {
     color: $darkGray;
     text-align: right;
     font-weight: 300;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
