@@ -18,9 +18,8 @@ $white: #fff;
 // $helvetica: 'Signika', Helvetica, Arial, sans-serif;
 // $helveticaNeue: 'Signika', "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $georgia: 'Merriweather', Georgia, serif;
-$helvetica: 'Special Elite', Courier, serif;
-$helveticaNeue: 'Special Elite', Courier, serif;
-$georgia: 'Quickwater', sans-serif;
+$displayFont: 'Special Elite', Courier, serif;
+$copyFont: 'Quickwater', sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
