@@ -19,12 +19,24 @@
     <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript">
       //<![CDATA[
+      function footerFadeIn(elem) {
+        if(parseInt(elem.css('bottom')) < 0)
+          elem.css('bottom', parseInt(elem.css('bottom'))+2 + 'px');
+        setTimeout('footerFadeIn', 30);
+      }
+
+      function footerFadeOut(elem) {
+        if(parseInt(elem.css('bottom')) >= -90)
+          elem.css('bottom', parseInt(elem.css('bottom'))-1 + 'px');
+        setTimeout('footerFadeOut', 30);
+      }
+
       jQuery(document).ready(function($) {
+        var footer = $('.wrapper-footer');
         $(document).on("mousemove", function(event) {
-          if($(window).height()-event.pageY < 90) {
-            console.log("pageX: " + event.pageX + ", pageY: " + event.pageY);
-            console.log($('.wrapper-footer').css('bottom'));
-          }
+          if($(window).height()-event.pageY < 90)
+            footerFadeIn(footer);
+          else footerFadeOut(footer);
         });
       })
       //]]>
