@@ -16,8 +16,19 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      jQuery(document).ready(function($) {
+        $(document).on("mousemove", function(event) {
+          if($(window).height()-event.pageY < 90) {
+            console.log("pageX: " + event.pageX + ", pageY: " + event.pageY);
+            console.log($('.wrapper-footer').css('bottom'));
+          }
+        });
+      })
+      //]]>
+    </script>
   </head>
 
   <body>
@@ -26,11 +37,6 @@
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-<!--           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
- -->
           <nav>
             <a href="{{ site.baseurl }}">Start</a>
             <a href="{{ site.baseurl }}#webdev">Web</a>
