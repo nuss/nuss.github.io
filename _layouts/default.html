@@ -20,15 +20,17 @@
     <script type="text/javascript">
       //<![CDATA[
       function footerFadeIn(elem) {
-        if(parseInt(elem.css('bottom')) < 0)
-          elem.css('bottom', parseInt(elem.css('bottom'))+2 + 'px');
-        setTimeout('footerFadeIn', 30);
+        if(parseInt(elem.css('bottom')) < 0) {
+          elem.css('bottom', parseInt(elem.css('bottom'))+1 + 'px');
+          setTimeout(footerFadeIn(elem), 300);
+        }
       }
 
       function footerFadeOut(elem) {
-        if(parseInt(elem.css('bottom')) >= -90)
+        if(parseInt(elem.css('bottom')) >= -90) {
           elem.css('bottom', parseInt(elem.css('bottom'))-1 + 'px');
-        setTimeout('footerFadeOut', 30);
+          setTimeout(footerFadeOut(elem), 300);
+        }
       }
 
       jQuery(document).ready(function($) {
