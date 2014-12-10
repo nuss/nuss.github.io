@@ -22,14 +22,14 @@
       function footerFadeIn(elem) {
         if(parseInt(elem.css('bottom')) < 0) {
           elem.css('bottom', parseInt(elem.css('bottom'))+1 + 'px');
-          setTimeout(footerFadeIn(elem), 300);
+          setTimeout(function() { footerFadeIn(elem) }, 100);
         }
       }
 
       function footerFadeOut(elem) {
         if(parseInt(elem.css('bottom')) >= -90) {
           elem.css('bottom', parseInt(elem.css('bottom'))-1 + 'px');
-          setTimeout(footerFadeOut(elem), 300);
+          setTimeout(function() { footerFadeOut(elem) }, 100);
         }
       }
 
